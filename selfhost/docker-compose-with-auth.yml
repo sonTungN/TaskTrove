@@ -9,4 +9,4 @@ services:
       - ./backups:/app/backups
     environment:
       - AUTH_SECRET=CHANGE_ME
-    restart: unless-stopped
+    restart: always
