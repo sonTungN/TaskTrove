@@ -3,9 +3,10 @@ services:
     image: ghcr.io/dohsimpson/tasktrove:latest
     container_name: tasktrove
     ports:
-      - "3000:3000"
+      - "3456:3000"
     volumes:
       - ./data:/app/data
+      - ./backups:/app/backups
     environment:
       - AUTH_SECRET=CHANGE_ME
     restart: unless-stopped
